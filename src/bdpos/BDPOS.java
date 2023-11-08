@@ -4,6 +4,7 @@
  */
 package bdpos;
 import BD.ConexionOracle;
+import VISTAS.Main;
 
 /**
  *
@@ -16,6 +17,7 @@ public class BDPOS {
      */
     public static void main(String[] args) {
         ConexionOracle con=new ConexionOracle();
+        Main m=new Main();
     }
     
 }
