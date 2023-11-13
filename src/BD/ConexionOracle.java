@@ -13,9 +13,9 @@ public class ConexionOracle {
     private Connection con=null;
     private String url,user,pass;
     public ConexionOracle(){
-        conectar();
+        //conectar();
     }
-    private void conectar(){
+    public Connection conectar(){
         try{
             Class.forName("oracle.jdbc.OracleDriver");
             url="jdbc:oracle:thin:@localhost:1521:XE";
@@ -23,10 +23,10 @@ public class ConexionOracle {
             pass="rootUser";
             con=DriverManager.getConnection(url,user,pass);
             System.err.println("SE CONECTO");
-            System.err.println("Siuuuuu");
         }catch(Exception e){
             System.out.println("ERROR AL CONECTAR"+" "+e);
         }
+        return con;
     }
     public void desconectar(){
         

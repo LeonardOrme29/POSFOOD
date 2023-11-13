@@ -17,7 +17,6 @@ public class BDPOS {
      */
     public static void main(String[] args) {
         ConexionOracle con=new ConexionOracle();
-        Main m=new Main();
     }
     
 }
