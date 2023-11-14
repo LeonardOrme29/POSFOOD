@@ -18,4 +18,8 @@ public class Venta {
     public void addProductos(Producto p){
         listP.add(p);
     }
+    public ArrayList<Producto> getListP() {
+        return listP;
+    }
+    
 }

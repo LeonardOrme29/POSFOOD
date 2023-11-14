@@ -118,6 +118,7 @@ public class Empleado {
                 estado=res.getString("estado");
             }
         }catch(SQLException e){
+            System.out.println(e);
         }
     }
     public boolean authUser(){
